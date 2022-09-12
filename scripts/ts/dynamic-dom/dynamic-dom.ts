@@ -26,5 +26,7 @@ itemsToCache.forEach((item: HTMLContent) => {
 (window as any).HTMLLoader = HTMLLoader;
 
 console.log('dynamic-dom loaded');
+
+
 // Do not touch this line, needed to reinitialize code in the dynamic-dom.ts setupAll function
 window.addEventListener('newPageLoad', () => setupAll());
